@@ -39,7 +39,8 @@ public class App
             int index = 1;
             while (rs.next()) {
                 if(rs.getString("games.name").equals("Super Mario Bros")) { System.out.print(" -> NEW: ");}
-                System.out.println(index + ": [" + rs.getString("name") + "] made by [" + rs.getString("companies.name") + "] released in " + rs.getString("release_year"));
+                // System.out.println(index + ": [" + rs.getString("name") + "] made by [" + rs.getString("companies.name") + "] released in " + rs.getString("release_year"));
+                System.out.println(String.format("%s: [%s] made by [%s] released in [%s]", index, rs.getString("games.name"), rs.getString("companies.name"), rs.getString("release_year")));
                 index++;
             }
             
@@ -56,7 +57,8 @@ public class App
             // print out table
             index = 1;
             while (rs.next()) {
-                System.out.println(index + ": [" + rs.getString("game") + "] made by [" + rs.getString("company") + "] released in " + rs.getString("year"));
+                // System.out.println(index + ": [" + rs.getString("game") + "] made by [" + rs.getString("company") + "] released in " + rs.getString("year"));
+                System.out.println(String.format("%s: [%s] made by [%s] released in [%s]", index, rs.getString("game"), rs.getString("company"), rs.getString("year")));
                 index++;
             }
             
