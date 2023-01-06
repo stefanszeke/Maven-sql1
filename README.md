@@ -1,4 +1,4 @@
 # Maven-sql1
 
-copy sample.env to .env
-fill in database connection to .env
+copy `sample.env` to `.env` <br />
+fill in database connection details to `.env`
